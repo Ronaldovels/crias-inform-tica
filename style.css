@@ -16,13 +16,14 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    background-color: lightblue;
     
 }
 
 .cabecalho{
     background-color: var(--cor1);
     padding: 30px;
-    height: 70px;
+    height: 50px;
 }
 
 .container{
@@ -45,7 +46,7 @@ h1{
 }
 
 nav {
-    margin-top: 10px;
+    background-color: var(--cor1);
 }
 
 ul {
@@ -73,12 +74,42 @@ div#main {
     border: 1px solid black;
 }
 
-img#placa-video {
-    
-    width: 600px;
-    height: 440px;
+div#pv :hover {
+    transform: scale(1.1) rotate(-3deg);
+    transition: all .5s ease-in-out;
+}
+div#pm :hover {
+    transform: scale(1.1) rotate(3deg);
+    transition: all .5s ease-in-out;
+}
+div#pr :hover {
+    transform: scale(1.1) rotate(3deg);
+    transition: all .5s ease-in-out;
 }
 
-#processador {
-    background-color: black;
+img#placa-video {
+    margin: 20px;
+    border: 1px solid black;
+    width: 300px;
+    height: 220px;
+}
+
+img#placa-mae {
+    margin: 20px;
+    border: 1px solid black;
+    width: 300px;
+    height: 186px;
+}
+
+img#processador {
+    margin: 20px;
+    border: 1px solid black;
+    width: 300px;
+    height: 186px;
+}
+
+h2 {
+    background-image: linear-gradient(90deg, var(--cor1), var(--cor4));
+    text-align: center;
+    margin: 20px 0px;
 }
